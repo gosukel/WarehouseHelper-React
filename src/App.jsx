@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "./App.css";
-import mainPage from "./components/densityCalculatorComponents/mainPage/MainPage";
+import CalcPage from "./components/densityCalculatorComponents/calcPage/CalcPage";
 
 function App() {
     const [calcPage, setCalcPage] = useState(true);
-    return <></>;
+    return <>{calcPage && <CalcPage />}</>;
 }
 
 export default App;

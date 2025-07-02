@@ -1,0 +1,61 @@
+.skid {
+    margin-bottom: 20px;
+    display: flex;
+    padding: 10px 15px;
+}
+
+.skid .skidDetails {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    transform: translateX(-20px);
+    transition: transform 0.3s ease-out;
+}
+
+.skidDetails.slide {
+    transform: translateX(10px);
+}
+
+.density {
+    align-self: center;
+    opacity: 0;
+    height: 100%;
+    width: 45px;
+    font-size: 1.2rem;
+    border-radius: 20%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease-in;
+}
+
+.density.active {
+    opacity: 100%;
+}
+
+.maxDense {
+    background-color: #31da3c;
+}
+
+.medDense {
+    background-color: #d7db25;
+}
+
+.minDense {
+    background-color: #da4531;
+}
+
+.skid input {
+    width: 75px;
+    outline: none;
+    border: none;
+    padding: 8px 0;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+.skid span {
+    align-self: flex-end;
+}
